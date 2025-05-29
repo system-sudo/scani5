@@ -1,0 +1,37 @@
+# version: "3.8"
+
+services:
+    db:
+        image: mysql:8.0
+        #command: --default-authentication-plugin=mysql_native_password
+        restart: always
+        environment:
+          MYSQL_ROOT_PASSWORD: udhai
+          MYSQL_DATABASE: test_scani5   # Initial database
+        volumes:
+          - ./docker/mysqldata:/var/lib/mysql
+          - ./docker/mysql/createDevDB.sql:/docker-entrypoint-initdb.d/createDevDB.sql
+          - ./docker/mysql/my.cnf:/etc/mysql/my.cnf
+    php:
+        image: scani5_new
+        build:
+            context: .
+            dockerfile: docker/DockerfilePHP
+            args:
+                buildno: 1.0
+        volumes:
+            - .:/var/www/html
+        working_dir: /var/www/html
+        ports:
+            - "8038:80"    # For Laravel web server
+            - "8082:8082"  # For Reverb WebSocket server
+        # depends_on:
+        #   - db
+
+    adminer:
+        image: adminer:4.8.1
+        restart: always
+        ports:
+          - "8039:8080"
+        depends_on:
+          - db

@@ -1,0 +1,31 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropColumn('auth_status');  
+            $table->renameColumn('status', 'is_locked');
+        });
+    }
+    
+    /**
+     * Reverse the migrations.
+     */
+    
+    public function down(): void
+    {
+        Schema::table('users', function (Blueprint $table) {
+            $table->string('auth_status')->nullable()->after('user_status');    
+            $table->renameColumn('is_locked', 'status');
+        });
+    }
+};
