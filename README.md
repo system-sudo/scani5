@@ -112,3 +112,32 @@ docker-compose exec app php artisan test
 ```bash
 npm run test
 ```
+Others:
+need npm
+need vite
+need php to run composer
+need composer
+
+sudo npm install -g vite   #Global
+npm install vite --save-dev #Local
+npx vite --version
+
+To proceed, you'll need to install Composer, which is a dependency manager for PHP and essential for running Laravel applications.
+
+🛠️ Install Composer on Ubuntu
+Run the following commands in your terminal:
+
+sudo apt update
+sudo apt install composer
+Once installed, verify it with:  
+composer --version
+Then you can go ahead with:
+composer install
+✅ To Fix This, Install the Missing PHP Extensions
+Run the following command to install both:
+sudo apt install php8.3-xml
+sudo apt install php8.3-gd
+
+
+
+
