@@ -59,3 +59,52 @@ Clone the repository:
 ```bash
 git clone https://github.com/system-sudo/scani5
 cd scani5
+```
+
+### Build the Docker image:  
+```bash
+docker build -t system-sudo/scani5 .
+```
+Or use Docker Compose:
+```bash
+docker-compose up --build
+```
+Install frontend dependencies:
+
+### Installation  
+```bash
+git clone https://github.com/system-sudo/scani5
+```
+
+### Installation  
+```bash
+git clone https://github.com/system-sudo/scani5
+```
+
+### Installation  
+```bash
+git clone https://github.com/system-sudo/scani5
+```
+
+### Installation
+```bash
+git clone https://github.com/system-sudo/scani5
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
