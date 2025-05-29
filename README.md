@@ -14,6 +14,12 @@ Scani5 is a comprehensive developer tool designed to streamline the development 
 - Composer
 - NPM
 - Vite
+- JSON
+- XML
+- Adminer
+- Axios
+- BootStrap
+- Saas
 
 ---
 
@@ -61,7 +67,7 @@ git clone https://github.com/system-sudo/scani5
 cd scani5
 ```
 
-### Build the Docker image:  
+#### Build the Docker image:  
 ```bash
 docker build -t system-sudo/scani5 .
 ```
