@@ -25,13 +25,12 @@ Scani5 is a comprehensive developer tool designed to streamline the development 
 
 ## 📚 Table of Contents
 
-- [Overview](#overview)
+- Overview
 - Getting Started
   - Prerequisites
   - Installation
-- Usage
-- [Testing](#testing)
-- Links
+  - Usage
+  - Testing
 
 ---
 
