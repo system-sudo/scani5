@@ -65,11 +65,11 @@ cd scani5
 ```bash
 docker build -t system-sudo/scani5 .
 ```
-Or use Docker Compose:
+#### Or use Docker Compose:
 ```bash
 docker-compose up --build
 ```
-Install frontend dependencies:
+## Install frontend dependencies:
 
 ### Installation  
 ```bash
