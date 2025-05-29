@@ -59,57 +59,54 @@ Ensure the following dependencies are installed:
 
 ### Installation
 
-Clone the repository:
+#### 1.	Clone the repository:
 
 ```bash
 git clone https://github.com/system-sudo/scani5
 cd scani5
 ```
-
-#### Build the Docker image:  
+#### 2.	Navigate to the project directory:
+```bash
+cd scani5
+```
+#### 3.	Install the dependencies: 
+##### a) Build the Docker image:  
 ```bash
 docker build -t system-sudo/scani5 .
 ```
-#### Or use Docker Compose:
+##### b) Or use Docker Compose:
 ```bash
 docker-compose up --build
 ```
-## Install frontend dependencies:
-
-### Installation  
+##### Install frontend dependencies:
 ```bash
-git clone https://github.com/system-sudo/scani5
+npm install
 ```
 
-### Installation  
+#### 4. Run the project:  
+##### a) Using Docker:
 ```bash
-git clone https://github.com/system-sudo/scani5
+docker run system-sudo/scani5
+```
+##### b) Using Docker Compose:
+```bash
+docker-compose up
+```
+##### c) Using npm:
+```bash
+npm run dev
 ```
 
-### Installation  
+#### 5. Run the test suite:  
+##### a) Using Docker:
 ```bash
-git clone https://github.com/system-sudo/scani5
+docker exec -it scani5 php artisan test
 ```
-
-### Installation
+##### b) Using Docker Compose:
 ```bash
-git clone https://github.com/system-sudo/scani5
+docker-compose exec app php artisan test
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+##### c) Using npm:
+```bash
+npm run test
+```
