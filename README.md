@@ -82,7 +82,9 @@ docker-compose up --build
 ```bash
 npm install
 ```
-
+```bash
+composer install
+```
 #### 4. Run the project:  
 ##### a) Using Docker:
 ```bash
