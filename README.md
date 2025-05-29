@@ -19,12 +19,13 @@ Scani5 is a comprehensive developer tool designed to streamline the development 
 
 ## 📚 Table of Contents
 
-- Overview
+- [Overview](#overview)
 - Getting Started
   - Prerequisites
   - Installation
 - Usage
-- Testing
+- [Testing](#testing)
+- Links
 
 ---
 
@@ -46,10 +47,10 @@ Scani5 empowers developers with a suite of features that simplify testing, asset
 
 Ensure the following dependencies are installed:
 
-- **PHP**
-- **Composer**
-- **NPM**
-- **Docker**
+- PHP
+- Composer
+- NPM
+- Docker
 
 ### Installation
 
