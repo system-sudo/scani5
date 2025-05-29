@@ -85,7 +85,7 @@ npm install
 ```bash
 composer install
 ```
-#### 4. Run the project:  
+### Usage
 ##### a) Using Docker:
 ```bash
 docker run system-sudo/scani5
@@ -99,7 +99,7 @@ docker-compose up
 npm run dev
 ```
 
-#### 5. Run the test suite:  
+### Testing 
 ##### a) Using Docker:
 ```bash
 docker exec -it scani5 php artisan test
